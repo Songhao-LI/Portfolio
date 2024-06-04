@@ -25,6 +25,7 @@ import IVI from "../assets/company/IVI.png";
 import DreamFlow from "../assets/company/DreamFlow.png";
 import immersive from "../assets/project/immersive.png";
 import techcompare from "../assets/project/techcompare.png";
+import old_web from "../assets/project/old_web.png";
 
 export const navLinks = [
   {
@@ -245,7 +246,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "JavaScript",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
@@ -275,7 +276,7 @@ const projects = [
       },
     ],
     image: techcompare,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/helinyi/techcompare/",
   },
   {
     name: "Trip Guide",
@@ -297,6 +298,27 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+  },
+  {
+    name: "Personal Website - Old Version ",
+    description:
+      "My First Personal Website, which is out of use now.",
+    tags: [
+      {
+        name: "Vue.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: old_web,
+    source_code_link: "https://blog.sohot.site/",
   },
 ];
 
