@@ -23,7 +23,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full shadow-xl hover:shadow-[#A48FFF]'
       >
         <div className='relative w-full h-[230px]' onClick={() => window.open(source_code_link, "_blank")}>
           <img src={image} alt='project_image'

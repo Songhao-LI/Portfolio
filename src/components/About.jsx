@@ -37,29 +37,38 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      <>
+          <motion.div variants={textVariant()}>
+              <p className={styles.sectionSubText}>Introduction</p>
+              <h2 className={styles.sectionHeadText}>Overview.</h2>
+          </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled full-stack software developer with experience in TypeScript, Python,
-        Java and C#, and expertise in frameworks like React, Django, Spring Boot and
-        Three.js. I'm a quick learner with a wide range of tech stack and
-        collaborate closely with clients to create efficient, and user-friendly solutions
-        that solve real-world problems. If you interested in me, don't hesitate to reach out and further discuss how I can bring value to your team!
-      </motion.p>
+          <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          >
+              I'm a skilled full-stack software developer with experience in TypeScript, Python,
+              Java and C#, and expertise in frameworks like React, Django, Spring Boot and
+              Three.js. I'm a quick learner with a wide range of tech stack and
+              collaborate closely with clients to create efficient, and user-friendly solutions
+              that solve real-world problems. If you are interested in me, don't hesitate to reach out and {' '}
+              <a
+                  href="https://zcal.co/songhao"
+                  className='text-blue-500 underline'
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                  schedule a meeting
+              </a>
+              {' '}to further discuss how I can bring value to your team!
+          </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
-    </>
+          <div className='mt-20 flex flex-wrap gap-10'>
+              {services.map((service, index) => (
+                  <ServiceCard key={service.title} index={index} {...service} />
+              ))}
+          </div>
+      </>
   );
 };
 

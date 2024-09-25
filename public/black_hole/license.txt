@@ -1,0 +1,8 @@
+Model Information:
+* title:	Wormhole Black Hole Galaxy
+* source:	https://sketchfab.com/3d-models/wormhole-black-hole-galaxy-c26eff50075d460ab994a9847d92584c
+* author:	alexantropov1986 (https://sketchfab.com/alexantropov1986)
+
+Model License:
+* license type:	SKETCHFAB Editorial (https://sketchfab.com/licenses)
+* requirements:	Use only in connection with events that are newsworthy or of public interest

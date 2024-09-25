@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { RxAvatar } from "react-icons/rx";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -32,12 +32,12 @@ const FeedbackCard = ({
             {designation} of {company}
           </p>
         </div>
-
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className='w-10 h-10 rounded-full object-cover'
-        />
+        <RxAvatar className='w-10 h-10 rounded-full object-cover'/>
+        {/*<img*/}
+        {/*  src={image}*/}
+        {/*  alt={`feedback_by-${name}`}*/}
+        {/*  className='w-10 h-10 rounded-full object-cover'*/}
+        {/*/>*/}
       </div>
     </div>
   </motion.div>

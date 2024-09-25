@@ -25,6 +25,7 @@ import IVI from "../assets/company/IVI.png";
 import DreamFlow from "../assets/company/DreamFlow.png";
 import immersive from "../assets/project/immersive.png";
 import techcompare from "../assets/project/techcompare.png";
+import dramflow from "../assets/project/DreamFlow.png";
 import old_web from "../assets/project/old_web.png";
 
 export const navLinks = [
@@ -163,6 +164,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 2024 - May 2024",
     points: [
+      "Implemented java micro-services architecture using Kafka for asynchronous messaging, " +
+      "and utilized Kubernetes for scalable and resilient containerized deployment. Integrated Spring Cloud Gateway to manage API access.",
       "Utilized Tailwind CSS for responsive layouts and dark mode, Animate On Scroll Library for animations to enhance\n" +
       "user experience. Embedded Stripe form within app to simulate the checkout experience.",
       "Utilized PostgreSQL to keep data and implement transaction management using JDBC. Supporting Multi-Version\n" +
@@ -185,9 +188,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 2024 - Present",
     points: [
-      "Conducted toolkit research. Developed an open-source .Net library in C# for Unity, aimed at filling the gap in VR for\n" +
-      "thematic map visualization. Expected to produce a top-tier conference publication from this work.",
-      "System Design. Implemented the factory design pattern to provide an API for creating various maps.",
+      "Conducted toolkit research. Developed an open-source .Net library in C# for Unity based on factory design pattern, aimed at\n" +
+      "filling the gap in VR for thematic map visualization. Expected to produce a top-tier conference publication.",
+      "Participated in VR/AR projects about enhancing storytelling. Expected to produce a top-tier conference publication.",
       "Streamlined maintenance operations by designing and implementing a JavaScript linear plotting library, which eliminates\n" +
       "the requirement of knowing how to manage temporary variables for algorithm designer when implementing new plotting\n" +
       "type, resulting in a substantial reduction in costs (from a team of 3 to a single maintenance personnel).",
@@ -200,10 +203,11 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2024 - Present",
     points: [
-      "Implemented java micro-services architecture using Kafka for asynchronous messaging, " +
-      "and utilized Kubernetes for scalable and resilient containerized deployment. Integrated Spring Cloud Gateway to manage API access.",
-      "As the author of LCM and LCM-LoRA model, Designed and Integrated AI model to Django project to increase the speed of generation by 10x than by mainstream models.",
-      "Real-Time AI Video Streaming: Created platform for high frame rate, real-time AI-generated video live streaming with flawless quality."
+      "Utilized TypeScript and Next.js to develop a React website, with Django handling the business logic. Through UI optimization\n" +
+      "by three.js and framer-motion, and performance improvements, successfully elevated the Product Hunt ranking from over 2700 to 78",
+      "Integrated AI model to Django project and RPC for creating real-time AI-generated video live streaming. Worked with the\n" +
+      "author of LCM and LCM-LoRA model, tuned AI model to increase the speed of generation by 10x than by mainstream models.",
+      "Utilized Key-Value distributed database based on Raft algorithm to manage the meta, status, configure of Kubernetes."
     ],
   },
 ];
@@ -211,26 +215,26 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Songhao is the best developer I ever worked with.",
+    name: "Dunwen Wang",
+    designation: "Team Leaders",
+    company: "Chinese Academy of Sciences",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "I've never met a web developer who truly cares about their clients' success like Songhao does.",
+    name: "Simian Luo",
+    designation: "Co-founder",
+    company: "DreamFlow",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Throughout our collaboration, Songhao has consistently demonstrated exceptional skills and dedication to our VR/AR/HCI projects, making a lasting impression on me.!",
+    name: "Yalong Yang",
+    designation: "Professor",
+    company: "Georgia Institute of Technology",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
@@ -276,28 +280,32 @@ const projects = [
       },
     ],
     image: techcompare,
-    source_code_link: "https://github.com/helinyi/techcompare/",
+    source_code_link: "https://techcompare.songhao-li.com/",
   },
   {
-    name: "Trip Guide",
+    name: "DreamFlow",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Leveraging the Generative AI to create Real-Time Video Streaming. Develop a website and use RPC for experiment with our Real-Time Video Streaming API for preliminary trial.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Machine learning",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "RabbitMQ",
         color: "pink-text-gradient",
       },
+      {
+        name: "Django",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: dramflow,
+    source_code_link: "https://dreamflow.art/",
   },
   {
     name: "Personal Website - Old Version ",
