@@ -62,6 +62,67 @@ const ProjectCard = ({
   );
 };
 
+const DemoCard = ({
+  index,
+  name,
+  description,
+  tags,
+  video,
+  source_code_link,
+}) => {
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt options={{
+        max: 45,
+        scale: 1,
+        speed: 450,
+      }}
+            className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full shadow-xl hover:shadow-[#A48FFF]'
+      >
+        <div className='relative w-full h-[230px]' onClick={() => window.open(source_code_link, "_blank")}>
+          <video
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className='w-full h-full object-cover rounded-2xl'
+          >
+            Your browser does not support the video tag.
+          </video>
+
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={github}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        </div>
+
+        <div className='mt-4 flex flex-wrap gap-2'>
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </Tilt>
+    </motion.div>
+  );
+};
+
 const Works = () => {
   return (
     <>
@@ -85,7 +146,11 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          project.video ? (
+            <DemoCard key={`project-${index}`} index={index} {...project} />
+          ) : (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          )
         ))}
       </div>
     </>

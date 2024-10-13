@@ -27,6 +27,7 @@ import immersive from "../assets/project/immersive.png";
 import techcompare from "../assets/project/techcompare.png";
 import dramflow from "../assets/project/DreamFlow.png";
 import old_web from "../assets/project/old_web.png";
+import kaze from "../assets/project/watermark.mp4";
 
 export const navLinks = [
   {
@@ -241,6 +242,57 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Kaze",
+    description:
+      "AI-based comprehensive image processing toolkit website, offering features such as watermark removal, photo enhancement, portrait retouching, background replacement, and more.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Computer Vision",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "blue-text-gradient",
+      },
+    ],
+    video: kaze,
+    image: dramflow,
+    source_code_link: "https://kaze.link/",
+  },
+  {
+    name: "DreamFlow",
+    description:
+      "Leveraging the Generative AI to create Real-Time Video Streaming. Develop a website and use RPC for experiment with our Real-Time Video Streaming API for preliminary trial.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "RabbitMQ",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: dramflow,
+    source_code_link: "https://dreamflow.art/",
+  },
+  {
     name: "Immersive Portfolio Website",
     description:
       "Web-based immersive portfolio website, providing good looking and enhancing storytelling aspect of the portfolio.",
@@ -281,31 +333,6 @@ const projects = [
     ],
     image: techcompare,
     source_code_link: "https://techcompare.songhao-li.com/",
-  },
-  {
-    name: "DreamFlow",
-    description:
-      "Leveraging the Generative AI to create Real-Time Video Streaming. Develop a website and use RPC for experiment with our Real-Time Video Streaming API for preliminary trial.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Machine learning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "RabbitMQ",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Django",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: dramflow,
-    source_code_link: "https://dreamflow.art/",
   },
   {
     name: "Personal Website - Old Version ",
